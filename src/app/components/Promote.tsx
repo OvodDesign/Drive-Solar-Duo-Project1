@@ -1,11 +1,18 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
-import { PCIcon, SoulutionIcon, StarIcon, SunIcon } from "./icons/icons";
+import {
+  ConsoleIcon,
+  PCIcon,
+  SoulutionIcon,
+  StarIcon,
+  SunIcon,
+  UniqueSolutionIcon,
+} from "./icons/icons";
 
 export default function Promote() {
   return (
     <section id="promote" className="container mx-auto px-4 py-20">
-      <h2 className="font-raleway text-[60px] font-bold leading-[72px] text-left mb-8">
+      <h2 className="text-[60px] font-bold leading-[72px] text-left mb-8">
         What We Promote
       </h2>
       <div className="grid grid-cols-12 gap-4">
@@ -52,7 +59,7 @@ export default function Promote() {
             </p>
           </CardContent>
         </Card>
-        <Card className="col-span-3 row-span-2">
+        <Card className="col-span-12 sm:col-span-6 lg:col-span-3 row-span-1 lg:row-span-2">
           <CardHeader>
             <CardTitle className="grid grid-cols-1 gap-2 font-inter text-[19.77px] font-semibold leading-[23.73px] text-left">
               <SoulutionIcon />
@@ -69,19 +76,19 @@ export default function Promote() {
                 width={238}
                 height={257}
                 layout="responsive"
-                src="/img/funny-man.png"
-                alt="Image"
-                className="w-full h-64 rounded-md object-cover"
+                src="/img/man.png"
+                alt="man"
+                className="hidden lg:block"
               />
             </div>
           </CardContent>
         </Card>
         <Card className="col-span-12 sm:col-span-6 lg:col-span-6">
           <div className="grid grid-cols-12 gap-4">
-            <div className="col-span-6">
+            <div className="col-span-12 lg:col-span-6">
               <CardHeader>
                 <CardTitle className="grid grid-cols-1 gap-2 font-inter text-[19.77px] font-semibold leading-[23.73px] text-left">
-                  <SoulutionIcon />
+                  <UniqueSolutionIcon />
                   Unique Solution
                 </CardTitle>
               </CardHeader>
@@ -93,14 +100,13 @@ export default function Promote() {
                 </p>
               </CardContent>
             </div>
-            <div className="col-span-6 flex justify-center items-center">
+            <div className="hidden lg:flex col-span-6 justify-center items-center my-4">
               <Image
-                width={238}
-                height={257}
+                width={218}
+                height={214}
                 layout="responsive"
-                src="/img/house-and-car.png"
-                alt="Image"
-                className="w-full h-64 rounded-md object-cover"
+                src="/img/house.png"
+                alt="house"
               />
             </div>
           </div>
@@ -108,7 +114,7 @@ export default function Promote() {
         <Card className="col-span-12 sm:col-span-6 lg:col-span-3">
           <CardHeader>
             <CardTitle className="grid grid-cols-1 gap-2 font-inter text-[19.77px] font-semibold leading-[23.73px] text-left">
-              <SunIcon />
+              <ConsoleIcon />
               Useful App
             </CardTitle>
           </CardHeader>

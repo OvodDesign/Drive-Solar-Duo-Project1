@@ -15,13 +15,16 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-20">
-      <h2 className="w-full font-raleway text-[60px] font-bold leading-[72px] text-center">
+    <div id="contact-us" className="container mx-auto px-4 py-20">
+      <h2 className="w-full text-[60px] font-bold leading-[72px] text-center">
         Let’s Get in Touch
       </h2>
       <form onSubmit={handleSubmit} className="space-y-4 max-w-lg mx-auto mt-8">
         <div>
-          <label htmlFor="email" className="block text-sm font-medium">
+          <label
+            htmlFor="email"
+            className="font-inter text-[18px] font-bold leading-[21.6px] text-left"
+          >
             Email
           </label>
           <input
@@ -35,7 +38,10 @@ const ContactForm = () => {
           />
         </div>
         <div>
-          <label htmlFor="name" className="block text-sm font-medium">
+          <label
+            htmlFor="name"
+            className="font-inter text-[18px] font-bold leading-[21.6px] text-left"
+          >
             Name
           </label>
           <input
@@ -49,7 +55,10 @@ const ContactForm = () => {
           />
         </div>
         <div>
-          <label htmlFor="message" className="block text-sm font-medium">
+          <label
+            htmlFor="message"
+            className="font-inter text-[18px] font-bold leading-[21.6px] text-left"
+          >
             Message
           </label>
           <textarea

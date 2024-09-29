@@ -6,6 +6,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { TickIcon } from "./icons/icons";
 
 export default function Earnings() {
   return (
@@ -13,8 +14,8 @@ export default function Earnings() {
       id="earnings"
       className="container mx-auto px-4 py-20 grid grid-cols-12 gap-4"
     >
-      <div className="col-span-3 grid grid-cols-1 gap-6">
-        <h2 className="font-raleway text-[60px] font-bold leading-[72px] text-left">
+      <div className="col-span-12 lg:col-span-4 grid grid-cols-1 gap-6">
+        <h2 className="text-[60px] font-bold leading-[72px] text-left">
           Earnings
         </h2>
         <p className="font-inter text-[14px] font-normal leading-[21px] text-left text-[#8987A1] mb-9">
@@ -34,7 +35,7 @@ export default function Earnings() {
           </CardContent>
         </Card>
       </div>
-      <div className="col-span-6">
+      <div className="col-span-12 lg:col-span-6">
         <Card className="col-span-12 sm:col-span-6 lg:col-span-3">
           <CardHeader>
             <CardTitle className="grid grid-cols-1 gap-4 font-raleway text-[30px] font-bold leading-[36px] text-left">
@@ -46,21 +47,39 @@ export default function Earnings() {
               Harness the limitless power of the sun to create sustainable
               energy solutions. Reduce your carbon footprint, lower energy costs
             </p>
-            <div className="grid grid-cols-12 gap-4">
-              <ul className="col-span-6">
-                <li>Charge your Car</li>
-                <li>Share your station</li>
-                <li>Earn from sharing</li>
+            <div className="grid grid-cols-12 gap-4 mt-12">
+              <ul className="col-span-6 grid gap-2">
+                <li className="flex gap-2">
+                  <TickIcon />
+                  Charge your Car
+                </li>
+                <li className="flex gap-2">
+                  <TickIcon />
+                  Share your station
+                </li>
+                <li className="flex gap-2">
+                  <TickIcon />
+                  Earn from sharing
+                </li>
               </ul>
-              <ul className="col-span-6">
-                <li>Control everything</li>
-                <li>No limits</li>
-                <li>Become happy</li>
+              <ul className="col-span-6 grid gap-2">
+                <li className="flex gap-2">
+                  <TickIcon />
+                  Control everything
+                </li>
+                <li className="flex gap-2">
+                  <TickIcon />
+                  No limits
+                </li>
+                <li className="flex gap-2">
+                  <TickIcon />
+                  Become happy
+                </li>
               </ul>
             </div>
           </CardContent>
           <CardFooter>
-            <div className="p-4 w-full bg-[#F5F8FF]">
+            <div className="p-6 w-full bg-[#F5F8FF]">
               <span className="font-inter text-[60px] font-bold leading-[72px] text-left">
                 €150
               </span>
@@ -70,6 +89,9 @@ export default function Earnings() {
             </div>
           </CardFooter>
         </Card>
+      </div>
+      <div className="col-span-12 sm:col-span-2 lg:col-span-2">
+        <div className="h-full rounded-lg bg-[url('/img/car-charger.png')] bg-no-repeat bg-cover"></div>
       </div>
     </section>
   );
